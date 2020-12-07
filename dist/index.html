@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Blog</title>
+    <script defer="" src="bundle.js"></script>
+<script defer src="bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+<body>
+    <header id="header">
+        <h1 class="header__title">JS Blog</h1>
+        <h2 class="header__subtitle">Create articles and add them to favorites</h2>
+        <button class="button header__button">Start</button>
+    </header>
+    <section class="content container">
+        <ul class="content__tabs" id="navigation">
+            <li><a class="content__tab" href="#" data-name="posts">Posts</a></li>
+            <li><a class="content__tab active" href="#" data-name="create">Create</a></li>
+            <li><a class="content__tab" href="#" data-name="favorite">Favorites</a></li>
+        </ul>
+        <div class="content__loader hide" id="loader">
+            <div class="content__load">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <form class="content__form content-form" id="form">
+            <p class="content-form__header">Create new post</p>
+            <div class="content-form__control">
+                <label>Name</label>
+                <input type="text" name="title" placeholder="Enter the title" />
+            </div>
+            <div class="content-form__control">
+                <label>Text</label>
+                <textarea name="fulltext" placeholder="Enter the text"></textarea>
+            </div>
+            <div class="content-form__control">
+                <label>Type</label>
+                <select name="type">
+                    <option value="note" selected>Notes</option>
+                    <option value="news">News</option>
+                </select>
+            </div>
+            <button class="content-form__button button" type="submit">Create</button>
+        </form>
+        <div class="content__posts content-posts" id="posts">
+            <article class="content-posts__panel">
+                <div class="content-posts__panel-head">
+                    <p class="content-posts__panel-title">Post title</p>
+                    <ul class="content-posts__tags">
+                        <li class="content-posts__tag">News</li>
+                    </ul>
+                </div>
+                <div class="content-posts__panel-body">
+                    <p>Some text</p>
+                </div>
+                <div class="content-posts__panel-footer"><small>12.12.12</small></div>
+            </article>
+        </div>
+        <div class="hide" id="favorite"></div>
+    </section>
+</body>
