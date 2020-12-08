@@ -1,7 +1,10 @@
 import './scss/global.scss'
 import './scss/header.scss'
 import './scss/content.scss'
-import {config} from './modules/config'
 
+import {HeaderComponent} from './components/header.component'
+import {NavigationComponent} from './components/navigation.component'
 
-console.log('Config key: ', config.wow)
+new HeaderComponent('header')
+
+const navigation = new NavigationComponent('navigation')

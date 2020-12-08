@@ -1,13 +1,17 @@
 .content {
     &__tabs {
         display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 40px 0 20px;
     }
 
     &__tab {
         padding: 8px 45px;
+        min-width: 190px;
         border-bottom: 1px solid #e0e0e0;
         color: #bdbdbd;
+        text-align: center;
 
         &.active {
             border-top: 2px solid #e96d71;
@@ -21,7 +25,6 @@
     @media (max-width: 480px) {
         .content__tabs {
             flex-direction: column;
-            align-items: center;
         }
 
         .content__tab {
