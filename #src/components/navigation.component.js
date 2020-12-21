@@ -13,7 +13,6 @@ export class NavigationComponent extends Component {
 
     registerTabs(tabs) {
         this.tabs = tabs
-        console.log(tabs)
     }
 }
 

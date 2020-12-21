@@ -26,7 +26,7 @@ module.exports = {
             filename: 'index.html',
             template: './#src/index.html'
         }),
-        new CleanWebpackPlugin(),
+        //new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
             patterns: [
                 {
